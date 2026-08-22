@@ -1,0 +1,15 @@
+# Notebook run artefacts
+mave_coverage/
+recomputation/
+mave_cache/
+evee_cache/
+*.ipynb_checkpoints/
+
+# Bulk downloads
+variant_summary.txt.gz
+*.csv.gz
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/

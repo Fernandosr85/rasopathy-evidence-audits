@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: RASopathy evidence audits
+message: >-
+  If you refer to this work, please cite it using these metadata.
+type: software
+authors:
+  - family-names: Rodrigues
+    given-names: Fernando
+    alias: Fernandosr85
+abstract: >-
+  Two audits of a RASopathy gene panel examining separate points at which a
+  measurement fails to become clinical evidence: whether a clinical variant is
+  matched to the correct functional experiment (PS3/BS3 ascertainment), and
+  whether reference data support the computational evidence strength being
+  assigned (PP3/BP4 calibration).
+keywords:
+  - RASopathies
+  - ACMG
+  - variant classification
+  - MaveDB
+  - ClinGen
+  - variant effect prediction
+license: CC0-1.0
+repository-code: 'https://github.com/Fernandosr85/rasopathy-evidence-audits'
