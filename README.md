@@ -82,13 +82,15 @@ information is not used.
 ## 2. Frequency controls and prospective VUS application
 
 **`notebooks/frequency_controls_and_prospective_vus.ipynb`** ·
-**`reports/preprint_skeleton.md`**
+**`reports/frequency_controls_report.md`**
 
 Can panel-specific computational-evidence thresholds be derived for ten RAS-MAPK genes, and at
 what evidence strength?
 
 **The limiting factor was not predictor discrimination, but empirical resolution in the benign
 tail.** AUROC is 0.963 (EVEE) and 0.980 (REVEL) on a 331-pathogenic / 104-benign reference set.
+Discrimination is not the problem; locating a threshold in the extreme tail is, because the
+tail is where benign controls are scarcest.
 
 ### Benign tail support at published REVEL thresholds
 
@@ -115,12 +117,36 @@ In the observed configuration the requirement is harsher still: at REVEL 0.932 t
 sensitivity is 0.275, so the ClinGen strong target needs FPR ≤ 0.82% — below what a *single*
 benign variant among 104 would produce (0.96%).
 
-### Derived thresholds are operationally nonselective
+### The two routes to a benign control are not independent
 
-Applied to 1,146 unselected ClinVar missense VUS in the same genes, the supporting threshold
-derived here would qualify 83.2% of them for REVEL and 77.7% for EVEE. Published supporting
-thresholds qualify 24.3% (Pejaver) and 19.5% (RASopathy VCEP). The derived values are
-therefore not candidate clinical cutoffs.
+The obvious remedy for a shortfall of controls is a larger population resource. It would not
+work here. Of 1,155 variants meeting the BS1 frequency criterion, only 129 are missense, and
+ClinVar already holds 104 of those. Splitting the rest: **none** is excluded as pathogenic —
+frequency and pathogenicity are disjoint criteria in a dominant, rare mechanism — and **69
+were already in the calibration set**.
+
+The frequency criterion therefore recovers 66% of the curated benign set rather than extending
+it. A larger database returns predominantly variants the reference set already contains. The
+binding constraint is how few distinct common missense variants these genes carry, which is
+what constraint means.
+
+### Derived thresholds are operationally nonselective at the lower levels
+
+Applied to 1,146 unselected ClinVar missense VUS in the same genes, the derived *supporting*
+thresholds qualify 78.6–83.2% of them for REVEL and 74.1–77.7% for EVEE, depending on the
+evidence-strength ladder. Published supporting thresholds qualify 24.3% (Pejaver) and 19.5%
+(RASopathy VCEP).
+
+The derived *strong* thresholds are far more selective — 6.0% to 27.8% — so the permissiveness
+is a property of the lower levels rather than of every derived value. Either way, the absolute
+numbers are not candidate clinical cutoffs.
+
+### Between-predictor instability was an artefact of scale
+
+On the rank-invariant measure EVEE and REVEL are close — 0.087 against 0.077 at the strong
+level. The apparent 2.6× difference exists only in score units, which are not comparable
+across predictors. Downstream, the propagation ratio falls from 3.12 on a score-selected
+cohort to 1.62 on an unselected one, and to 1.01 under the ClinGen ladder.
 
 ### Corrections applied
 

@@ -1,6 +1,6 @@
 # Empirical Resolution Limits on Strong Computational Evidence in Constrained RAS-MAPK Genes
 
-*Report v1. Numbers from `notebooks/frequency_controls_and_prospective_vus.ipynb`. Companion to
+*Report v2. Numbers from `notebooks/frequency_controls_and_prospective_vus.ipynb`. Companion to
 `mave_report.md`, which covers the functional-evidence side of the same panel.*
 
 **Central claim:**
@@ -13,7 +13,9 @@
 > Strong computational-evidence calibration in constrained genes can demand false-positive-rate
 > resolution that the available benign reference set does not provide; deriving hard-threshold
 > calibrations under these conditions can produce highly permissive operating points that are
-> sensitive to reference-set composition.
+> sensitive to reference-set composition. The shortfall is not a property of the population
+> database used to characterise the panel: the frequency criterion and the curated benign set
+> are not independent routes to a control in these genes.
 
 **What this is not.** No predictor is found wanting. AUROC is 0.963 for EVEE and 0.980 for
 REVEL on this reference set, and nothing here contradicts that. Discrimination and calibration
@@ -177,7 +179,9 @@ that distance into an operational reading.
 | EVEE | derived (Tavtigian) | supporting | 0.044 | **77.7%** |
 
 Global-LR-derived supporting and moderate thresholds were **operationally nonselective** in
-this cohort, qualifying the majority of unresolved missense variants. This is not a claim about
+this cohort, qualifying the majority of unresolved missense variants — 78.6–83.2% for REVEL
+and 74.1–77.7% for EVEE at supporting, depending on the ladder. The derived *strong*
+thresholds are not: they qualify 6.0% to 27.8%, so the effect belongs to the lower levels. This is not a claim about
 discrimination — VUS carry no truth label — nor about which fraction *should* qualify, since no
 normative target is defined here. The statement is comparative: for REVEL, published thresholds
 were substantially more selective than the corresponding derived ones at each level.
@@ -215,18 +219,61 @@ quality.
 **Gene concentration.** SOS1 (14) and SOS2 (12) supply 26 of the 35 BS1 controls (74%) — the
 same two genes that dominate the primary benign set. The perturbation is gene-enriched.
 
+The BA1 set is smaller and more concentrated still: SOS1 supplies 3 of its 6 controls (50%).
+The REVEL shift it produces (0.601 → 0.733) is therefore a shift produced by a handful of
+variants in one gene, and should be cited that way rather than as general tail sensitivity.
+
 The conflicting-removed BS1 set has 116 benign controls, still below the 122 minimum from
 Table 3. Even under the best-case resolution bound, the expanded set remains below the minimum
 sample size.
 
-### 2.7 Operating-point uncertainty is similar across predictors
+### 2.7 The frequency route and the curated route are not independent
+
+Section 2.3 says the panel is short of controls, which invites the obvious remedy: use a
+larger or more ancestrally diverse population resource. Whether that would work depends on
+where candidate controls are lost, and the losses are of three different kinds.
+
+**Table 8. Where controls are lost, of 1,155 variants meeting the BS1 frequency criterion.**
+
+| Loss | n | Of what | What it is |
+|---|---:|---|---|
+| Not missense | 1,026 | frequency-passing variants (88.8%) | gene composition, not a database limitation |
+| Missense, absent from ClinVar | 25 | common missense variants (19.4%) | submission coverage |
+| In ClinVar, excluded | 68 | ClinVar-recorded common missense | by design — split below |
+
+Only 129 of the 1,155 are missense at all, and only missense variants can enter a missense
+reference set. ClinVar already holds 104 of those 129.
+
+Splitting the third loss gives the result that matters:
+
+- **0** are excluded as pathogenic. No common missense variant in these genes carries a
+  pathogenic classification — the frequency criterion and the pathogenicity criterion are
+  disjoint here, which is what a dominant, rare mechanism predicts.
+- **69** were already in the calibration set.
+
+**The frequency route recovers 66% of the curated benign set (69 of 104).** The two are not
+independent sources: in these genes a common missense variant is typically one ClinVar has
+already classified as benign at adequate review status, so the frequency criterion
+rediscovers the reference set rather than extending it.
+
+This settles the remedy question without reference to any particular resource. A larger
+population database raises the count of frequency-qualifying variants, of which roughly one in
+nine is missense, and returns predominantly variants the reference set already contains. The
+binding constraint is how few distinct common missense variants these genes carry at all,
+which is what constraint means.
+
+*One count differs by a single variant between this analysis and §2.6 (35 against 36). gnomAD
+reports one most-severe consequence per variant, so consequence annotation can disagree with
+ClinVar's. It affects no conclusion here.*
+
+### 2.8 Operating-point uncertainty is similar across predictors
 
 Bootstrap of the benign side only, with thresholds mapped back onto the **fixed** benign
 reference and expressed as the empirical benign-tail fraction — rank-invariant, and not a
 prospective population FPR. Score-scale widths are reported within predictor only: squaring a
 predictor's scores preserves ranking, AUROC and the qualifying set while changing every width.
 
-**Table 8. Threshold dispersion (Tavtigian ladder, 2,000 replicates).**
+**Table 9. Threshold dispersion (Tavtigian ladder, 2,000 replicates).**
 
 | Level | Predictor | Score-scale width | Benign-tail-fraction width |
 |---|---|---:|---:|
@@ -245,9 +292,17 @@ most 0.029 (EVEE) and 0.019 (REVEL).
 Strong-evidence operating-point uncertainty is therefore primarily a property of the sparse
 benign reference tail rather than a predictor-specific phenomenon.
 
-### 2.8 Downstream propagation depends on cohort and framework
+**Zero width at the moderate level is saturation, not precision.** On the Tier-1 series the
+qualifying-fraction interval collapses to zero for four rows — both predictors, both ladders,
+all at *moderate*. Every bootstrap threshold qualifies the entire cohort, because the derived
+moderate thresholds (0.141 for EVEE, 0.358 for REVEL) sit below almost every score in a series
+that was filtered for high scores. This is the same permissiveness §2.5 measures on the
+unselected cohort, seen from the other side; it must not be read as a tight estimate. No row
+at the strong level saturates.
 
-**Table 9. Qualifying-fraction interval width, strong level.**
+### 2.9 Downstream propagation depends on cohort and framework
+
+**Table 10. Qualifying-fraction interval width, strong level.**
 
 | Ladder | Predictor | Tier-1 (selected, n=105) | Unselected (n=1,146) |
 |---|---|---:|---:|
@@ -315,6 +370,18 @@ resolution to support a ClinGen-strength panel-specific strong threshold. The sh
 specific to that target: the Tavtigian strong target needs 68 controls in the best case and 104
 are available.
 
+**On the obvious remedy.** A larger or more ancestrally diverse population resource would not
+close this gap, and §2.7 shows why without appeal to any particular database. The BS1 frequency
+criterion and the curated benign set are not independent routes to a control in these genes:
+66% of the 104 benign controls are recovered by the frequency criterion alone, and none of the
+129 common missense variants in these genes carries a pathogenic classification. Expanding the
+population source raises the count of frequency-qualifying variants — of which roughly one in
+nine is missense — and returns predominantly variants the reference set already holds.
+
+What would add controls is not more genomes but more distinct common missense variation in
+these genes, which constraint is precisely the absence of, or more clinical reporting of the
+variation that exists: 25 of the 129 common missense variants have no ClinVar record.
+
 **Generalisation.** Constrained genes with dominant, rare disease mechanisms share the
 condition — benign missense variation is depleted precisely where strong-level thresholds must
 be located. This has not been tested outside RAS-MAPK.
@@ -354,6 +421,16 @@ and does not simulate acquiring independent new controls.
 fixed empirical benign distribution — rank-invariant and suitable for comparison, not a
 population estimate.
 
+**5.7 One population source.** The non-independence in §2.7 was established within a single
+population database. The argument does not depend on which database that is — it turns on the
+fraction of frequency-qualifying variants that are missense and the overlap between the two
+routes — but it has not been confirmed against a resource with substantially different
+ancestral composition, and doing so would strengthen it.
+
+**5.8 Consequence annotation is single-valued.** The population source reports one
+most-severe consequence per variant, so a variant ClinVar records as missense can be counted
+under another consequence in §2.7. The discrepancy is one variant in this panel.
+
 ---
 
 ## 6. Data and code
@@ -375,4 +452,6 @@ all.
 
 2. **Replication in a second constrained panel.** The resolution bound in §2.3 is arithmetic
    and transfers directly; whether the benign-tail sparsity that makes it bind is typical of
-   constrained genes generally has not been tested.
+   constrained genes generally has not been tested. The same applies to the route
+   non-independence in §2.7, which is the more surprising of the two and the more useful if it
+   generalises.
