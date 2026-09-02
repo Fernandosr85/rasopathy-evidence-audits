@@ -201,6 +201,14 @@ isoform divergence are not specific to RAS-MAPK — but that has not been tested
 [RASopathy Functional Evidence Atlas](https://github.com/Fernandosr85/rasopathy-functional-evidence-atlas)
 — the curation audit these two grew out of, including the 40-variant worksheet.
 
+## Data snapshot
+
+Both audits query live resources. The figures in this README and in the reports were retrieved
+on **2 September 2026** — MaveDB, the ClinGen Allele Registry, gnomAD v4 and ClinVar. The MAVE
+audit was run twice, twelve days apart, and returned identical counts; that is evidence of
+stability over those twelve days, not a guarantee for any later run. Each notebook writes a
+`manifest.json` carrying its own run date.
+
 ## License
 
 Code CC0. ClinVar, gnomAD, MaveDB and ClinGen Allele Registry data are subject to their own

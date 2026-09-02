@@ -1,8 +1,14 @@
 # Auditing MAVE Coverage for RASopathy VUS Reveals Silent Variant-Matching Failure Modes
 
-*Report v3. Numbers from `mave_coverage_audit.ipynb`. Companion to
-`Empirical Resolution Limits on Strong Computational Evidence in Constrained RAS-MAPK Genes`,
-which covers the computational-evidence side of the same panel.*
+*Report v4. Numbers from `mave_coverage_audit.ipynb`, retrieved 2 September 2026. Companion
+to `frequency_controls_report.md`, which covers the computational-evidence side of the same
+panel.*
+
+*MaveDB is a live resource — score sets are revised and remapped, and at least one covering
+this panel carries a 2026 modification date. Every count below is therefore a snapshot. The
+audit was run twice, twelve days apart, and returned identical figures: 99,044 substitutions,
+29,481 of them in haplotypes, 37 score sets, 4 invisible to symbol search, 3/40 covered. That
+is a statement about these twelve days, not a guarantee.*
 
 **Central claim:**
 
@@ -250,7 +256,7 @@ have a calibration published elsewhere and not deposited.
 (`1_variants_resolved.csv` through `6_vcep_table.csv`).
 
 Companion analysis on the computational-evidence side of the same panel:
-`frequency_controls_and_prospective_vus.ipynb`, which examines the independent problem of
+`frequency_controls_report.md`, which examines the independent problem of
 whether reference data provide sufficient empirical resolution for computational-evidence
 calibration.
 

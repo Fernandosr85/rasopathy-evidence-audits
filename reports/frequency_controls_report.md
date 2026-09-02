@@ -1,6 +1,6 @@
 # Empirical Resolution Limits on Strong Computational Evidence in Constrained RAS-MAPK Genes
 
-*Report v2. Numbers from `notebooks/frequency_controls_and_prospective_vus.ipynb`. Companion to
+*Report v3. Numbers from `notebooks/frequency_controls_and_prospective_vus.ipynb`. Companion to
 `mave_report.md`, which covers the functional-evidence side of the same panel.*
 
 **Central claim:**
@@ -437,6 +437,12 @@ under another consequence in §2.7. The discrepancy is one variant in this panel
 
 `notebooks/frequency_controls_and_prospective_vus.ipynb`, with all derived tables (R0 through
 R7) and a `manifest.json` recording the run's parameters and caveats.
+
+**Data retrieved 2 September 2026.** Both upstream sources are live: gnomAD v4 through its
+GraphQL API, and ClinVar through the `variant_summary` release current on that date. A later
+run will not necessarily reproduce these counts — ClinVar submissions accumulate, and the
+benign-tail counts in §2.2 are small enough that a handful of reclassifications would move
+them. The `manifest.json` written by each run records its own date.
 
 Companion analysis on the functional-evidence side of the same panel: `mave_report.md`, which
 examines whether functional-assay coverage is correctly identified for unresolved variants at
