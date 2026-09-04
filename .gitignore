@@ -1,4 +1,4 @@
-# Notebook run artefacts
+# Notebook run artefacts. Frozen snapshots live in results/ and ARE tracked.
 mave_coverage/
 recomputation/
 mave_cache/
@@ -7,7 +7,10 @@ evee_cache/
 
 # Bulk downloads
 variant_summary.txt.gz
+
+# Compressed artefacts, except the frozen snapshots
 *.csv.gz
+!results/**/*.csv.gz
 
 # Python
 __pycache__/

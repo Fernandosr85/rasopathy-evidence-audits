@@ -1,0 +1,73 @@
+{
+  "generated": "2026-09-02 03:33:09",
+  "n_variants": 40,
+  "coverage": {
+    "protein_anchored_isolated": 3,
+    "haplotype_only": 2,
+    "hgvs_route": 1,
+    "hgvs_route_false_positives": 1,
+    "missed_by_hgvs_route": 3
+  },
+  "inventory": {
+    "score_sets_downloaded": 37,
+    "invisible_to_search": 4,
+    "substitutions_total": 99044,
+    "substitutions_in_haplotypes": 29481
+  },
+  "reference_proteins": [
+    "NP_001341538.1",
+    "NP_001341618.1",
+    "NP_004324.2",
+    "NP_005334.1",
+    "NP_203524.1",
+    "NP_789765.1"
+  ],
+  "routes": {
+    "A. symbol search only": {
+      "covered": 1,
+      "variants": [
+        "I208V"
+      ]
+    },
+    "B. hgvs_pro substring": {
+      "covered": 1,
+      "variants": [
+        "M170L"
+      ]
+    },
+    "C. post-mapped, top level only": {
+      "covered": 3,
+      "variants": [
+        "G138S",
+        "I208V",
+        "I93V"
+      ]
+    },
+    "D. accession-aware": {
+      "covered": 3,
+      "variants": [
+        "G138S",
+        "I208V",
+        "I93V"
+      ]
+    }
+  },
+  "distinct_answer_sets": 3,
+  "transient_failures_excluded_from_totals": [],
+  "calibration_states": {
+    "uncalibrated": 5
+  },
+  "failure_modes": [
+    "1. Depositor numbering differs from reference; postMapped resolves it. (missed coverage)",
+    "2. Target-name metadata is family-level (RAS, RAF); it provides no usable HGNC key. (missed coverage)",
+    "3. Full-text search returns zero for genes that have score sets. (missed coverage)",
+    "4. Haplotypes: a VRS reader ignoring members drops them; a substring match on hgvs_pro misattributes combination scores to single variants.",
+    "5. Isoform mismatch: hgvs_pro and postMapped can reference different isoforms of the same gene. Sole source of a false-positive coverage call in this audit."
+  ],
+  "caveats": [
+    "All inventoried score sets with a published mapping were retrieved.",
+    "Existence of an assay is not fitness for germline classification.",
+    "RUO calibration is not equivalent to calibrated.",
+    "Nothing here constitutes a variant classification. No score set involved carries a published calibration, so no failure mode here altered a classification - only coverage ascertainment."
+  ]
+}

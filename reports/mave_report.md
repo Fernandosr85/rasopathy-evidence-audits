@@ -16,8 +16,8 @@ is a statement about these twelve days, not a guarantee.*
 > 40-variant RASopathy audit, an accession-aware comparison of post-mapped MAVE
 > representations with ClinGen protein representations recovered three isolated measurements
 > missed by HGVS matching and rejected the sole HGVS hit as an isoform-mismatch false
-> positive. **All three recovered measurements come from assays whose design does not
-> support germline classification in this disease context, so usable coverage is zero.**
+> positive. **None of the three recovered measurements currently provides calibrated,
+> mechanism-appropriate evidence for PS3/BS3 application in this disease context.**
 
 **The framing that survives every failure mode:**
 
@@ -102,9 +102,15 @@ The BRAF score set also leaves `Assay type`, `Molecular mechanism`, `Variant con
 and `Model system` unspecified in its metadata, so the mechanistic mismatch is only visible
 from the abstract and method text.
 
-**Coverage is 3/40. Usable coverage is 0/40.** The distinction matters more than the count:
+**Coverage is 3/40. Coverage that is directly applicable as PS3/BS3 under the evaluated
+calibration and mechanism requirements is 0/40.** The distinction matters more than the count:
 a table reporting three variants as "assay available" without the mechanism column would
 invite exactly the wrong inference.
+
+The phrasing is deliberate. Each of these assays is sound for the question it was designed to
+answer — the BRAF screen measures domain stability, and does so well. What none of them
+supplies is calibrated evidence about a gain-of-function mechanism, which is what PS3/BS3
+application in this panel would require.
 
 ### 2.3 The five failure modes
 

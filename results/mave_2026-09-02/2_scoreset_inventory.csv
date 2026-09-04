@@ -1,0 +1,52 @@
+provisional_gene,urn,title,target_names,target_match,num_variants,source
+BRAF,urn:mavedb:00001204-a-5,"Dabrafenib and Cetuximab HT-29 cells, base editing z-scores (predicted consequence)",EGFR,False,472,search
+BRAF,urn:mavedb:00001204-a-2,MAP2K1 dabrafenib and cetuximab HT-29 cells,MAP2K1,False,4,search
+BRAF,urn:mavedb:00001204-a-4,"Dabrafenib and Cetuximab HT-29 cells, base editing z-scores (predicted consequence)",MAP2K1,False,142,search
+BRAF,urn:mavedb:00000708-a-1,BRAF Raf-like Ras-binding domain domainome 1.0,BRAF RAF-LIKE RAS-BINDING DOMAIN,True,1521,search
+BRAF,urn:mavedb:00000091-a-1,BRAF resistance to vemurafenib,BRAF,True,73,search
+BRAF,urn:mavedb:00001237-a-2,VarChAMP_Imaging_Morphological_Change_May_2025,ABCD1;BAP1;BCL10;BRAF;BRCA1;BRIP1;CCM2;CTCF;F9;FANCC;FARS2;FH;FLCN;G6PD;KRAS;LMNA;MSH2;NF2;PTPN11;RAD51D;RAF1;RET;RHO;RPS19;SDHD;SHOC2;SOS2;ZC4H2,True,430,search
+BRAF,urn:mavedb:00001237-a-1,VarChAMP_Imaging_Localization_May_2025,ABCD1;BAP1;BCL10;BRAF;BRCA1;BRIP1;CCM2;CTCF;F9;FANCC;FARS2;FH;FLCN;G6PD;KRAS;LMNA;MSH2;NF2;PTPN11;RAD51D;RAF1;RET;RHO;RPS19;SDHD;SHOC2;SOS2;ZC4H2,True,430,search
+KRAS,urn:mavedb:00000104-a-2,PARP1 dense CRISPR screen clone 8,PARP1,False,46834,search
+KRAS,urn:mavedb:00000104-a-1,PARP1 dense CRISPR clone5,PARP1,False,46213,search
+KRAS,urn:mavedb:00000061-e-1,RAF variant selected after 10h,RAF,False,298,search
+KRAS,urn:mavedb:00000061-f-1,RAF variant selected after 12h,RAF,False,298,search
+KRAS,urn:mavedb:00000061-g-1,RAF variant selected after 24h,RAF,False,298,search
+KRAS,urn:mavedb:00000061-a-1,RAF variant selected after 2h,RAF,False,298,search
+KRAS,urn:mavedb:00000061-h-1,RAF variant selected after 48h,RAF,False,298,search
+KRAS,urn:mavedb:00000061-b-1,RAF variant selected after 4h,RAF,False,298,search
+KRAS,urn:mavedb:00000061-c-1,RAF variant selected after 6h,RAF,False,298,search
+KRAS,urn:mavedb:00000061-i-1,RAF variant selected after 72h,RAF,False,298,search
+KRAS,urn:mavedb:00000061-d-1,RAF variant selected after 8h,RAF,False,298,search
+KRAS,urn:mavedb:00000115-a-27,abundance fitness from abundancePCA of KRAS block2,KRAS,True,8912,search
+KRAS,urn:mavedb:00000115-a-21,binding fitness from KRAS-RALGDSRDB bindingPCA of KRAS block1,KRAS,True,13676,search
+KRAS,urn:mavedb:00000115-a-22,binding fitness from KRAS-RAF1RDB bindingPCA of KRAS block1,KRAS,True,14044,search
+KRAS,urn:mavedb:00000115-a-24,binding fitness from KRAS-RAF1RDB bindingPCA of KRAS block3,KRAS,True,5163,search
+KRAS,urn:mavedb:00000115-a-3,binding free energy changes of KRAS-SOS1 interaction,KRAS,True,3553,search
+KRAS,urn:mavedb:00000115-a-6,binding free energy changes of KRAS-RAF1RBD interaction,KRAS,True,3553,search
+KRAS,urn:mavedb:00000115-a-7,folding free energy changes of KRAS in abundancePCA,KRAS,True,3553,search
+KRAS,urn:mavedb:00000115-a-12,binding fitness from KRAS-DARPin K27 bindingPCA of KRAS block1,KRAS,True,14859,search
+KRAS,urn:mavedb:00000115-a-5,binding free energy changes of KRAS-RALGDSRBD interaction,KRAS,True,3553,search
+KRAS,urn:mavedb:00000115-a-9,binding fitness from KRAS-DARPin K55 bindingPCA of KRAS block2,KRAS,True,8657,search
+KRAS,urn:mavedb:00000115-a-10,binding fitness from KRAS-DARPin K27 bindingPCA of KRAS block3,KRAS,True,4515,search
+KRAS,urn:mavedb:00000115-a-11,binding fitness from KRAS-DARPin K27 bindingPCA of KRAS block2,KRAS,True,8666,search
+KRAS,urn:mavedb:00000115-a-26,binding fitness from KRAS-DARPin K55 bindingPCA of KRAS block1,KRAS,True,12607,search
+KRAS,urn:mavedb:00000115-a-14,binding fitness from KRAS-SOS1 bindingPCA of KRAS block2,KRAS,True,5949,search
+KRAS,urn:mavedb:00000115-a-2,binding free energy changes of KRAS-DARPin K27 interaction,KRAS,True,3553,search
+KRAS,urn:mavedb:00000115-a-13,binding fitness from KRAS-SOS1 bindingPCA of KRAS block3,KRAS,True,3361,search
+KRAS,urn:mavedb:00000115-a-15,binding fitness from KRAS-SOS1 bindingPCA of KRAS block1,KRAS,True,12637,search
+KRAS,urn:mavedb:00000115-a-16,binding fitness from KRAS-PIK3CGRDB bindingPCA of KRAS block3,KRAS,True,3833,search
+KRAS,urn:mavedb:00000115-a-17,binding fitness from KRAS-PIK3CGRDB bindingPCA of KRAS block2,KRAS,True,6893,search
+KRAS,urn:mavedb:00000115-a-23,abundance fitness from abundancePCA of KRAS block1,KRAS,True,13845,search
+KRAS,urn:mavedb:00000115-a-18,binding fitness from KRAS-PIK3CGRDB bindingPCA of KRAS block1,KRAS,True,11096,search
+KRAS,urn:mavedb:00000115-a-19,binding fitness from KRAS-RALGDSRDB bindingPCA of KRAS block3,KRAS,True,3351,search
+KRAS,urn:mavedb:00000115-a-28,abundance fitness from abundancePCA of KRAS block3,KRAS,True,4695,search
+KRAS,urn:mavedb:00000115-a-25,binding fitness from KRAS-RAF1RDB bindingPCA of KRAS block2,KRAS,True,7459,search
+KRAS,urn:mavedb:00000115-a-20,binding fitness from KRAS-RALGDSRDB bindingPCA of KRAS block2,KRAS,True,5606,search
+KRAS,urn:mavedb:00000115-a-8,binding fitness from KRAS-DARPin K55 bindingPCA of KRAS block3,KRAS,True,4970,search
+KRAS,urn:mavedb:00000115-a-1,binding free energy changes of KRAS-DARPin K55 interaction,KRAS,True,3553,search
+KRAS,urn:mavedb:00000115-a-4,binding free energy changes of KRAS-PIK3CGRBD interaction,KRAS,True,3553,search
+RAF1,urn:mavedb:00001002-a-1,RAF1 Raf-like Ras-binding domain domainome 1.0,RAF1 RAF-LIKE RAS-BINDING DOMAIN,True,1421,search
+,urn:mavedb:00000057-a-1,Unregulated-Ras,RAS,True,3300,seed
+,urn:mavedb:00000057-b-1,Attenuated-Ras,RAS,True,3300,seed
+,urn:mavedb:00000057-c-1,Regulated-Ras,RAS,True,3300,seed
+,urn:mavedb:00000057-d-1,G12V mutated Ras,RAS,True,3300,seed

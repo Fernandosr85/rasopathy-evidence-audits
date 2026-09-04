@@ -32,10 +32,12 @@ fails silently.
 I208V, which an earlier manual pass had missed. Two more appear only inside multi-substitution
 haplotypes. The HGVS route found one variant, and that one was a false positive.
 
-**Usable coverage is zero.** The HRAS measurements come from a bacterial two-hybrid system
-without membrane context; the BRAF measurement from a domainome screen of *domain stability in
-yeast*, which is orthogonal to a gain-of-function mechanism. No covering score set carries a
-published calibration.
+**None of the three currently provides calibrated, mechanism-appropriate evidence for PS3/BS3
+application.** The HRAS measurements come from a bacterial two-hybrid system without membrane
+context; the BRAF measurement from a domainome screen of *domain stability in yeast*, which is
+orthogonal to a gain-of-function mechanism. No covering score set carries a published
+calibration. Each is sound data for the question it was built to answer — the mismatch is with
+this use, not with the experiment.
 
 ### The five failure modes
 
@@ -126,9 +128,13 @@ frequency and pathogenicity are disjoint criteria in a dominant, rare mechanism 
 were already in the calibration set**.
 
 The frequency criterion therefore recovers 66% of the curated benign set rather than extending
-it. A larger database returns predominantly variants the reference set already contains. The
-binding constraint is how few distinct common missense variants these genes carry, which is
-what constraint means.
+it. Within the evaluated route — gnomAD v4 filtering allele frequency under the VCEP criteria —
+expanding the population-derived control set largely rediscovered already curated benign
+variants and did not close the resolution gap.
+
+That is what the data show. It does not exclude the possibility that a resource with a
+substantially different ancestral composition would surface independent controls; testing that
+would require running the same route against one.
 
 ### Derived thresholds are operationally nonselective at the lower levels
 
@@ -141,11 +147,13 @@ The derived *strong* thresholds are far more selective — 6.0% to 27.8% — so 
 is a property of the lower levels rather than of every derived value. Either way, the absolute
 numbers are not candidate clinical cutoffs.
 
-### Between-predictor instability was an artefact of scale
+### The apparent 2.6× difference between predictors was a score-scale artefact
 
-On the rank-invariant measure EVEE and REVEL are close — 0.087 against 0.077 at the strong
-level. The apparent 2.6× difference exists only in score units, which are not comparable
-across predictors. Downstream, the propagation ratio falls from 3.12 on a score-selected
+Both predictors carry real operating-point uncertainty at the strong level. What was not real
+is the size of the gap between them: on the rank-invariant measure EVEE and REVEL are close —
+0.087 against 0.077 — while in raw score units they read 0.568 against 0.220, a 2.6× ratio.
+Score units are not comparable across predictors, so that ratio measures the scales, not the
+stability. Downstream, the propagation ratio falls from 3.12 on a score-selected
 cohort to 1.62 on an unselected one, and to 1.01 under the ClinGen ladder.
 
 ### Corrections applied
@@ -200,6 +208,22 @@ isoform divergence are not specific to RAS-MAPK — but that has not been tested
 
 [RASopathy Functional Evidence Atlas](https://github.com/Fernandosr85/rasopathy-functional-evidence-atlas)
 — the curation audit these two grew out of, including the 40-variant worksheet.
+
+## Frozen outputs
+
+`results/mave_2026-09-02/` holds the derived tables from the MAVE run of 2 September 2026,
+with a `run_manifest.json` giving the retrieval date, the SHA-256 of every file and of the
+notebook that produced them, and the headline counts. That folder is the artefact a reader
+should check the reports against.
+
+Not included: the ~575 MB of raw API responses the notebook caches. Those are re-fetchable and
+redistribute third-party records; the notebook rebuilds them on a clean run.
+
+**The frequency-controls snapshot is not yet frozen.** Its notebook carries saved outputs from
+an earlier run, and the figures in the report come from a later one. Until the corresponding
+`results/` folder exists, that report's numbers are checkable by re-running the notebook but
+not by inspecting a committed artefact — the weaker of the two positions, and the honest thing
+to say about it.
 
 ## Data snapshot
 

@@ -1,0 +1,92 @@
+{
+  "snapshot": "mave_2026-09-02",
+  "retrieval_date": "2026-09-02",
+  "notebook_run_timestamp": "2026-09-02 03:33:09",
+  "produced_by": "notebooks/mave_coverage_audit.ipynb",
+  "notebook_sha256": "b03d85d9c934841c9186f66bf96d96e80d3e059f120d143fe11b42e38f9495e4",
+  "sources": [
+    {
+      "name": "MaveDB API",
+      "endpoint": "https://api.mavedb.org/api/v1",
+      "note": "live resource; score sets are revised and remapped"
+    },
+    {
+      "name": "ClinGen Allele Registry",
+      "endpoint": "https://reg.clinicalgenome.org/allele",
+      "note": "live resource"
+    },
+    {
+      "name": "blocked_vus_worksheet.csv",
+      "origin": "github.com/Fernandosr85/rasopathy-functional-evidence-atlas",
+      "frozen_copy": "0_input_blocked_vus_worksheet.csv"
+    }
+  ],
+  "headline_counts": {
+    "variants_audited": 40,
+    "isolated_measurements": 3,
+    "haplotype_only": 2,
+    "hgvs_route_hits": 1,
+    "hgvs_route_false_positives": 1,
+    "score_sets_downloaded": 37,
+    "invisible_to_symbol_search": 4,
+    "substitutions_total": 99044,
+    "substitutions_in_haplotypes": 29481,
+    "distinct_answer_sets": 3,
+    "transient_failures": []
+  },
+  "stability_check": {
+    "previous_run": "2026-08-21",
+    "identical": true,
+    "note": "Two runs twelve days apart returned identical counts. Evidence of stability over that interval, not a guarantee for later runs."
+  },
+  "not_included": {
+    "mave_cache/": "575 MB of raw API responses. Re-fetchable; excluded by .gitignore."
+  },
+  "files": [
+    {
+      "file": "0_input_blocked_vus_worksheet.csv",
+      "bytes": 9838,
+      "sha256": "b2e9505195e42645207e3df00d9297fdc93806c61a99d03ee38caee3af1f30a2"
+    },
+    {
+      "file": "1_variants_resolved.csv",
+      "bytes": 29279,
+      "sha256": "e27d7bf5c3e4400ea8d0bc8ded5b2b3d462723aba8e745c9672c2062570b1a44"
+    },
+    {
+      "file": "2_scoreset_inventory.csv",
+      "bytes": 5478,
+      "sha256": "3649688f7efb7a37698c35ecbe6b48664cbbf6bed5e4fe2d7f7a484410f53c9f"
+    },
+    {
+      "file": "3_mapped_substitutions.csv.gz",
+      "bytes": 345066,
+      "sha256": "f9cb14426a5b817b5c504d10593464dcac84d10c1d4c2b967b387dc9d9ef2f95"
+    },
+    {
+      "file": "4_route_comparison.csv",
+      "bytes": 30656,
+      "sha256": "d46b18a50a95eb4e31e713a083a715e3f97ac6e3f3b207367e5bf80fa360ed71"
+    },
+    {
+      "file": "5_calibration_state.csv",
+      "bytes": 310,
+      "sha256": "f03ad881c4c867f45c15079f55ffa891a9826493fc0be3fe5176da1616329126"
+    },
+    {
+      "file": "6_vcep_table.csv",
+      "bytes": 6956,
+      "sha256": "2e90753c43858fcb875fa3f6a05b545d1ce2031b943ea6a219f04db80a021b0e"
+    },
+    {
+      "file": "7_route_table.csv",
+      "bytes": 259,
+      "sha256": "bd2916fee867b0e20ce633098aa24546e0a0cf6af432dfbdc1b427d58d6931f2"
+    },
+    {
+      "file": "manifest.json",
+      "bytes": 2216,
+      "sha256": "de484b2b54b92988d0989f83921000366dbed38478a2c7bb33db6caad20d49c9"
+    }
+  ]
+}

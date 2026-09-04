@@ -256,11 +256,15 @@ independent sources: in these genes a common missense variant is typically one C
 already classified as benign at adequate review status, so the frequency criterion
 rediscovers the reference set rather than extending it.
 
-This settles the remedy question without reference to any particular resource. A larger
-population database raises the count of frequency-qualifying variants, of which roughly one in
-nine is missense, and returns predominantly variants the reference set already contains. The
-binding constraint is how few distinct common missense variants these genes carry at all,
-which is what constraint means.
+Within the evaluated route this settles the remedy question. Expanding the population source
+raises the count of frequency-qualifying variants, of which roughly one in nine is missense,
+and returns predominantly variants the reference set already contains. The binding constraint
+here is how few distinct common missense variants these genes carry.
+
+**What this does not establish.** The route was evaluated against one population resource under
+one set of criteria. A resource with substantially different ancestral composition could
+surface controls this one does not, and nothing here excludes that. The claim is about what the
+evaluated route yields, not about what any future resource must yield.
 
 *One count differs by a single variant between this analysis and §2.6 (35 against 36). gnomAD
 reports one most-severe consequence per variant, so consequence annotation can disagree with
@@ -370,9 +374,9 @@ resolution to support a ClinGen-strength panel-specific strong threshold. The sh
 specific to that target: the Tavtigian strong target needs 68 controls in the best case and 104
 are available.
 
-**On the obvious remedy.** A larger or more ancestrally diverse population resource would not
-close this gap, and §2.7 shows why without appeal to any particular database. The BS1 frequency
-criterion and the curated benign set are not independent routes to a control in these genes:
+**On the obvious remedy.** Within the evaluated frequency route, expanding the population-derived
+control set did not close this gap, and §2.7 shows why. The BS1 frequency criterion and the
+curated benign set are not independent routes to a control in these genes:
 66% of the 104 benign controls are recovered by the frequency criterion alone, and none of the
 129 common missense variants in these genes carries a pathogenic classification. Expanding the
 population source raises the count of frequency-qualifying variants — of which roughly one in
@@ -421,11 +425,13 @@ and does not simulate acquiring independent new controls.
 fixed empirical benign distribution — rank-invariant and suitable for comparison, not a
 population estimate.
 
-**5.7 One population source.** The non-independence in §2.7 was established within a single
-population database. The argument does not depend on which database that is — it turns on the
-fraction of frequency-qualifying variants that are missense and the overlap between the two
-routes — but it has not been confirmed against a resource with substantially different
-ancestral composition, and doing so would strengthen it.
+**5.7 One population source, one set of criteria.** The non-independence in §2.7 was
+established within a single population database under a single frequency criterion. The
+mechanism it turns on — how few frequency-qualifying variants are missense, and how much the
+two routes overlap — is not obviously specific to that database, but this has not been tested.
+A resource with substantially different ancestral composition could surface independent
+controls, and the analysis here neither demonstrates nor excludes that. Running the same route
+against such a resource is the direct test.
 
 **5.8 Consequence annotation is single-valued.** The population source reports one
 most-severe consequence per variant, so a variant ClinVar records as missense can be counted
