@@ -216,6 +216,13 @@ with a `run_manifest.json` giving the retrieval date, the SHA-256 of every file 
 notebook that produced them, and the headline counts. That folder is the artefact a reader
 should check the reports against.
 
+**Verifying the snapshot.** Each file in `results/` is listed in that folder's
+`run_manifest.json` with its SHA-256, alongside the hash of the notebook that produced it. A
+`.gitattributes` marks `results/` as binary so no platform translates line endings on
+checkout — without it, a Windows clone with `core.autocrlf=true` rewrites the text files and
+every hash fails while the stored data is correct. The failure would look like broken
+provenance and would not be.
+
 Not included: the ~575 MB of raw API responses the notebook caches. Those are re-fetchable and
 redistribute third-party records; the notebook rebuilds them on a clean run.
 
