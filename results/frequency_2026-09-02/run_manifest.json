@@ -1,0 +1,158 @@
+{
+  "snapshot": "frequency_2026-09-02",
+  "retrieval_date": "2026-09-02",
+  "notebook_run_timestamp": "2026-09-02 02:38:41",
+  "produced_by": "notebooks/frequency_controls_and_prospective_vus.ipynb",
+  "notebook_sha256": "1f1dc5340a90824d8292da16f14ec0058c3e305d8bcee889c41ee72c05273c69",
+  "notebook_provenance": "Verified. The committed notebook is the executed session: its saved manifest output reads 2026-09-02 02:38:41, matching manifest.json in this folder, and its code cells are identical to the previously committed copy. Every headline figure in the reports was also recomputed from these tables (22 checks, 0 mismatches). The chain from report to table to executing notebook is closed.",
+  "sources": [
+    {
+      "name": "gnomAD v4",
+      "endpoint": "https://gnomad.broadinstitute.org/api",
+      "schema": "joint fafmax (gnomAD v4)",
+      "note": "live resource"
+    },
+    {
+      "name": "ClinVar variant_summary",
+      "note": "live resource; release current on the retrieval date"
+    },
+    {
+      "name": "EVEE API",
+      "endpoint": "https://xix0d0o8le.execute-api.us-east-1.amazonaws.com"
+    },
+    {
+      "name": "reference set",
+      "origin": "/kaggle/input/notebooks/fernandosr85/evee-revel/evee_rasopathy_a/1_conjunto_comparavel.csv",
+      "note": "ClinVar >=2-star missense scored by both predictors"
+    }
+  ],
+  "headline_counts": {
+    "pathogenic": 331,
+    "benign_controls": 104,
+    "zero_event_cp_upper_bound": 0.03485,
+    "clingen_strong_controls_needed": 122,
+    "tavtigian_strong_controls_needed": 68,
+    "frequency_passing_bs1": 1155,
+    "of_which_missense": 129,
+    "excluded_as_plp": 0,
+    "recovered_by_frequency_route": 69,
+    "recovered_fraction": 0.6635,
+    "routes_independent": false,
+    "unselected_vus_evaluated": 1146
+  },
+  "verification": {
+    "method": "Every figure cited in README.md and reports/frequency_controls_report.md was recomputed from these tables.",
+    "checks": 22,
+    "mismatches": 0
+  },
+  "not_included": {
+    "evee_cache/": "raw API responses; re-fetchable, excluded by .gitignore"
+  },
+  "files": [
+    {
+      "file": "R0_estimator_comparison.csv",
+      "bytes": 362,
+      "sha256": "a97df87874a38fc61342f6bc47a9a1563cdd14a40865b4b5f490d32b71481ee3"
+    },
+    {
+      "file": "R1_tail_support.csv",
+      "bytes": 535,
+      "sha256": "d10cd8925154d076736671b849a471e7d9c0213193773c28db69c4b5f5d44227"
+    },
+    {
+      "file": "R1b_resolution_limit.csv",
+      "bytes": 928,
+      "sha256": "8f4fb45bdc651104fd0b3fbbe31b66bcd57f4d5ce47b4d6cf0b3d2bcec8f7bd1"
+    },
+    {
+      "file": "R1c_required_fpr.csv",
+      "bytes": 1251,
+      "sha256": "e3e5735627d5b7a8c5323c9825468f36e191192976dd00f906fe87468cc90fb3"
+    },
+    {
+      "file": "R2_revel_positive_control.csv",
+      "bytes": 472,
+      "sha256": "2cb6d0226f14eb2e38b7b240b5a5fccb4e984d822730b34d1f1466ad6a02b26c"
+    },
+    {
+      "file": "R2b_qualifying_fraction.csv",
+      "bytes": 1336,
+      "sha256": "308739d78946e7f664a107d2dc1ff73e2eea60124422840da35b43920d8043a2"
+    },
+    {
+      "file": "R3_controls_BA1.csv",
+      "bytes": 681,
+      "sha256": "981bc96aa3b0946863b1a4affa1ff242f3cf6ccae026e861aad53c6e90862a02"
+    },
+    {
+      "file": "R3_controls_BS1.csv",
+      "bytes": 3976,
+      "sha256": "cbd87d3d1194709dacf571eefed7df6314efd8892ff25b519233f5686ea8c681"
+    },
+    {
+      "file": "R3_controls_exploratory.csv",
+      "bytes": 1992,
+      "sha256": "e9decca96d7265ce45de5e3d69485580ab0aeea80e5f03c834b09841a94a467c"
+    },
+    {
+      "file": "R3_gnomad_raw.csv.gz",
+      "bytes": 507356,
+      "sha256": "eb747ff475fcdfef32a1aff03b466aac36f5bc208ffc466e5efb7fd3d8a736c2"
+    },
+    {
+      "file": "R3b_control_funnel.csv",
+      "bytes": 460,
+      "sha256": "4207bc854521c446a20eaa6619819a711d50476ccef8f96c938ee0e604b52c1d"
+    },
+    {
+      "file": "R3c_funnel_decomposition.csv",
+      "bytes": 331,
+      "sha256": "f1274f43b34bde214cf1cce2941668cdf1ee138635867cc283a47bfcd53f48b0"
+    },
+    {
+      "file": "R3d_loss3_split.csv",
+      "bytes": 77,
+      "sha256": "b8162684061ffe57a6ea5c950fa2ee4fe7159b960c24c2d91490d6ed9619a7a3"
+    },
+    {
+      "file": "R4_composition.csv",
+      "bytes": 1010,
+      "sha256": "fe87d46bacda6d33c99fc61a9ed121cf77fe1ba18712a70612ff82132c24ffdb"
+    },
+    {
+      "file": "R4b_propagation_replication.csv",
+      "bytes": 2229,
+      "sha256": "8afaf63d32796d35ee9246a03b215e0cf6da1eebe542516905e59746069a9dd4"
+    },
+    {
+      "file": "R4b_unfiltered_vus.csv",
+      "bytes": 29948,
+      "sha256": "8e3a2f509467f84d92791e54ac2dcb11009bac84dd66d5b81cf717b722a033ef"
+    },
+    {
+      "file": "R5_operating_point_stability.csv",
+      "bytes": 2057,
+      "sha256": "cee327e270f21ebb3d9290720628479dd3d0347027b206af5349b49b4a7ea726"
+    },
+    {
+      "file": "R6_removal_k.csv",
+      "bytes": 496,
+      "sha256": "5badc50d2927abc29c1353b4430a7c82066f40570da3ccac1ac6a58705726241"
+    },
+    {
+      "file": "R7_logo_operating_point.csv",
+      "bytes": 780,
+      "sha256": "2dcc7794dff4691ffffa0efebe1a25c19aa291566fbb7810b020a12c9d444dbf"
+    },
+    {
+      "file": "fig_R1_tail_support.png",
+      "bytes": 65991,
+      "sha256": "bf58448c38d321c1b09826c3a27b3d7c529ca40a27170e5065a882e40262d739"
+    },
+    {
+      "file": "manifest.json",
+      "bytes": 8244,
+      "sha256": "c5ba763f2898956a2e46d41353c452394f818ded55822c3b71c5fee3e3f8683a"
+    }
+  ]
+}

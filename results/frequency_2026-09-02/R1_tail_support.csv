@@ -1,0 +1,6 @@
+threshold_source,threshold,benign_above,n_benign,benign_frac,benign_frac_95CI,pathogenic_above,n_pathogenic,predictor
+Pejaver supporting,0.644,4,104,0.038461538461538464,"[0.0106, 0.0956]",286,331,REVEL
+RASopathy VCEP PP3 (supporting),0.7,3,104,0.028846153846153848,"[0.0060, 0.0820]",258,331,REVEL
+Pejaver moderate,0.773,1,104,0.009615384615384616,"[0.0002, 0.0524]",216,331,REVEL
+Pejaver strong,0.932,0,104,0.0,"[0.0000, 0.0348]",91,331,REVEL
+EVEE published site cutoff,0.8,2,104,0.019230769230769232,"[0.0023, 0.0677]",160,331,EVEE

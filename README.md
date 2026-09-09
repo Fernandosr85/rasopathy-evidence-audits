@@ -216,21 +216,17 @@ with a `run_manifest.json` giving the retrieval date, the SHA-256 of every file 
 notebook that produced them, and the headline counts. That folder is the artefact a reader
 should check the reports against.
 
-**Verifying the snapshot.** Each file in `results/` is listed in that folder's
-`run_manifest.json` with its SHA-256, alongside the hash of the notebook that produced it. A
-`.gitattributes` marks `results/` as binary so no platform translates line endings on
-checkout — without it, a Windows clone with `core.autocrlf=true` rewrites the text files and
-every hash fails while the stored data is correct. The failure would look like broken
-provenance and would not be.
-
 Not included: the ~575 MB of raw API responses the notebook caches. Those are re-fetchable and
 redistribute third-party records; the notebook rebuilds them on a clean run.
 
-**The frequency-controls snapshot is not yet frozen.** Its notebook carries saved outputs from
-an earlier run, and the figures in the report come from a later one. Until the corresponding
-`results/` folder exists, that report's numbers are checkable by re-running the notebook but
-not by inspecting a committed artefact — the weaker of the two positions, and the honest thing
-to say about it.
+`results/frequency_2026-09-02/` holds the same for the frequency-controls study — the twenty
+derived tables, the figure, and its own `run_manifest.json`. The committed notebook is the
+executed session: its saved manifest output carries the same timestamp as the frozen tables.
+
+Both snapshots are verifiable end to end. Each file's SHA-256 is listed alongside the hash of
+the notebook that produced it, and for the frequency study every figure cited in this README
+and in the report was additionally recomputed from the frozen tables — twenty-two checks, no
+mismatches.
 
 ## Data snapshot
 

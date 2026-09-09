@@ -1,0 +1,8 @@
+step,n,note,branch,kept_from_previous
+gnomAD variants in the 10 genes,39907,,frequency,
+  with FAF95 reported,12444,,frequency,0.3118
+  FAF >= BS1 (0.025%),1155,"frequency criterion alone, all consequences",frequency,0.0928
+ClinVar missense matched to gnomAD,3049,,clinvar,
+"  candidates (not P/LP, not already in REF)",2810,,clinvar,0.9216
+  candidates with FAF >= BS1,36,,converged,
+"  of those, with an EVEE score",35,-> usable as controls,converged,0.9722

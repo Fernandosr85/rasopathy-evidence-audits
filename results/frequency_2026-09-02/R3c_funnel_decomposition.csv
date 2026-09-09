@@ -1,0 +1,4 @@
+loss,n,of_what,interpretation
+1. not missense,1026,frequency-passing variants,gene composition; not a database limitation
+"2. missense, absent from ClinVar",25,common missense variants,submission coverage gap
+"3. in ClinVar, excluded as P/LP or already in REF",68,ClinVar-recorded common missense,by design; split in the next cell

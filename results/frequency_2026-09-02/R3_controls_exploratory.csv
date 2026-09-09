@@ -1,0 +1,18 @@
+cid,gene,evee,revel,y,source,clinvar_sig,faf95,joint_af
+40586,RAF1,0.0874,0.34,0.0,exploratory,Conflicting classifications of pathogenicity,0.00028917,0.00027569372595424103
+40646,SOS1,0.8531,0.865,0.0,exploratory,Conflicting classifications of pathogenicity,0.0001368,0.00012838037305971982
+40729,SOS1,0.0137,0.19,0.0,exploratory,Conflicting classifications of pathogenicity,0.00019255,0.00016042922051531124
+45357,SOS1,0.0035,0.035,0.0,exploratory,Conflicting classifications of pathogenicity,0.00028273,0.0002346832312796539
+46242,MAP2K2,0.0007,0.219,0.0,exploratory,Uncertain significance,0.00015122,0.00015089606179907847
+177842,RAF1,0.0594,0.693,0.0,exploratory,Conflicting classifications of pathogenicity,0.00013832,0.00013939898591884377
+177887,PTPN11,0.0209,0.066,0.0,exploratory,Conflicting classifications of pathogenicity,0.0001851,0.00015803721497523464
+181527,SHOC2,0.0128,0.287,0.0,exploratory,Conflicting classifications of pathogenicity,0.00015106,0.0001350649736871127
+180900,MAP2K1,0.0048,0.121,0.0,exploratory,Conflicting classifications of pathogenicity,0.00019677,0.0001679141469217805
+280150,RIT1,0.6466,0.086,0.0,exploratory,Conflicting classifications of pathogenicity,0.00013411,0.00010658351500039039
+372672,SHOC2,0.9038,0.571,0.0,exploratory,Conflicting classifications of pathogenicity,1.2399999999999998e-06,0.00010160750507727746
+373121,SOS2,0.3234,0.555,0.0,exploratory,Uncertain significance,0.00012429,0.00011249353162193173
+376857,SOS2,0.0032,0.257,0.0,exploratory,Uncertain significance,0.00011126,0.00010222908981414131
+477722,SOS1,0.0333,0.333,0.0,exploratory,Uncertain significance,0.00045598,0.0003643727706955058
+542401,SOS2,0.1166,0.343,0.0,exploratory,Uncertain significance,0.00027258,0.0002235837928530413
+862440,SOS2,0.0077,0.411,0.0,exploratory,Conflicting classifications of pathogenicity,0.00027393,0.00023111860163951695
+842576,SOS2,0.0066,0.357,0.0,exploratory,Conflicting classifications of pathogenicity,0.00023923,0.00019705337048016576

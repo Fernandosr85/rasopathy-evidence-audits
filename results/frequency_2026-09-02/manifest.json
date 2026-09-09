@@ -1,0 +1,287 @@
+{
+  "generated": "2026-09-02 02:38:41",
+  "reference_source": "/kaggle/input/notebooks/fernandosr85/evee-revel/evee_rasopathy_a/1_conjunto_comparavel.csv",
+  "n_pat": 331,
+  "n_ben": 104,
+  "corrections": {
+    "haldane_anscombe": "0.5 on all four cells (denominators Npos+1, Nneg+1), always",
+    "rounding": "removed; scan over raw scores",
+    "frequency_criteria": {
+      "BA1_FAF": 0.0005,
+      "BS1_FAF": 0.00025,
+      "exploratory_joint_AF": 0.0001
+    },
+    "fpr": "mapped onto the fixed benign distribution, not the resampled one",
+    "vus": "complete cases for the between-predictor comparison"
+  },
+  "gnomad_schema_used": "joint fafmax (gnomAD v4)",
+  "resolution_limit": {
+    "zero_event_cp_upper_bound": 0.034848306587674044,
+    "levels_beyond_resolution_bound": [
+      {
+        "ladder": "Tavtigian (prior 0.10)",
+        "level": "very_strong",
+        "max_admissible_fpr": 0.002857142857142857,
+        "n_needed_two_sided": 1290
+      },
+      {
+        "ladder": "ClinGen PP3 (prior 0.0441)",
+        "level": "strong",
+        "max_admissible_fpr": 0.029824038174768863,
+        "n_needed_two_sided": 122
+      },
+      {
+        "ladder": "ClinGen PP3 (prior 0.0441)",
+        "level": "very_strong",
+        "max_admissible_fpr": 0.0008896797153024911,
+        "n_needed_two_sided": 4145
+      }
+    ]
+  },
+  "control_funnel": {
+    "frequency_passing_bs1": 1155,
+    "of_which_missense": 129,
+    "missense_in_clinvar": 104,
+    "excluded_as_plp": 0,
+    "already_in_reference_set": 69,
+    "benign_controls": 104,
+    "recovered_by_frequency_route": 69,
+    "recovered_fraction": 0.6635,
+    "routes_independent": false
+  },
+  "propagation_replication": [
+    {
+      "ladder": "Tavtigian (prior 0.10)",
+      "level": "moderate",
+      "predictor": "EVEE",
+      "eval_set": "Tier-1 (selected)",
+      "n_eval": 105,
+      "frac_median": 1.0,
+      "frac_2.5": 1.0,
+      "frac_97.5": 1.0,
+      "frac_width": 0.0,
+      "frac_at_ceiling": 1.0
+    },
+    {
+      "ladder": "Tavtigian (prior 0.10)",
+      "level": "moderate",
+      "predictor": "EVEE",
+      "eval_set": "ClinVar VUS (unselected)",
+      "n_eval": 1146,
+      "frac_median": 0.5733,
+      "frac_2.5": 0.4869,
+      "frac_97.5": 0.6309,
+      "frac_width": 0.144,
+      "frac_at_ceiling": 0.0
+    },
+    {
+      "ladder": "Tavtigian (prior 0.10)",
+      "level": "moderate",
+      "predictor": "REVEL",
+      "eval_set": "Tier-1 (selected)",
+      "n_eval": 105,
+      "frac_median": 1.0,
+      "frac_2.5": 0.9905,
+      "frac_97.5": 1.0,
+      "frac_width": 0.0095,
+      "frac_at_ceiling": 0.948
+    },
+    {
+      "ladder": "Tavtigian (prior 0.10)",
+      "level": "moderate",
+      "predictor": "REVEL",
+      "eval_set": "ClinVar VUS (unselected)",
+      "n_eval": 1146,
+      "frac_median": 0.5777,
+      "frac_2.5": 0.4494,
+      "frac_97.5": 0.692,
+      "frac_width": 0.2426,
+      "frac_at_ceiling": 0.0
+    },
+    {
+      "ladder": "Tavtigian (prior 0.10)",
+      "level": "strong",
+      "predictor": "EVEE",
+      "eval_set": "Tier-1 (selected)",
+      "n_eval": 105,
+      "frac_median": 0.8857,
+      "frac_2.5": 0.5238,
+      "frac_97.5": 1.0,
+      "frac_width": 0.4762,
+      "frac_at_ceiling": 0.0975
+    },
+    {
+      "ladder": "Tavtigian (prior 0.10)",
+      "level": "strong",
+      "predictor": "EVEE",
+      "eval_set": "ClinVar VUS (unselected)",
+      "n_eval": 1146,
+      "frac_median": 0.185,
+      "frac_2.5": 0.0602,
+      "frac_97.5": 0.3988,
+      "frac_width": 0.3386,
+      "frac_at_ceiling": 0.0
+    },
+    {
+      "ladder": "Tavtigian (prior 0.10)",
+      "level": "strong",
+      "predictor": "REVEL",
+      "eval_set": "Tier-1 (selected)",
+      "n_eval": 105,
+      "frac_median": 0.9238,
+      "frac_2.5": 0.819,
+      "frac_97.5": 0.9714,
+      "frac_width": 0.1524,
+      "frac_at_ceiling": 0.0
+    },
+    {
+      "ladder": "Tavtigian (prior 0.10)",
+      "level": "strong",
+      "predictor": "REVEL",
+      "eval_set": "ClinVar VUS (unselected)",
+      "n_eval": 1146,
+      "frac_median": 0.2784,
+      "frac_2.5": 0.1562,
+      "frac_97.5": 0.3656,
+      "frac_width": 0.2094,
+      "frac_at_ceiling": 0.0
+    },
+    {
+      "ladder": "ClinGen PP3 (prior 0.0441)",
+      "level": "moderate",
+      "predictor": "EVEE",
+      "eval_set": "Tier-1 (selected)",
+      "n_eval": 105,
+      "frac_median": 1.0,
+      "frac_2.5": 1.0,
+      "frac_97.5": 1.0,
+      "frac_width": 0.0,
+      "frac_at_ceiling": 0.998
+    },
+    {
+      "ladder": "ClinGen PP3 (prior 0.0441)",
+      "level": "moderate",
+      "predictor": "EVEE",
+      "eval_set": "ClinVar VUS (unselected)",
+      "n_eval": 1146,
+      "frac_median": 0.5131,
+      "frac_2.5": 0.4124,
+      "frac_97.5": 0.575,
+      "frac_width": 0.1627,
+      "frac_at_ceiling": 0.0
+    },
+    {
+      "ladder": "ClinGen PP3 (prior 0.0441)",
+      "level": "moderate",
+      "predictor": "REVEL",
+      "eval_set": "Tier-1 (selected)",
+      "n_eval": 105,
+      "frac_median": 1.0,
+      "frac_2.5": 0.9714,
+      "frac_97.5": 1.0,
+      "frac_width": 0.0286,
+      "frac_at_ceiling": 0.542
+    },
+    {
+      "ladder": "ClinGen PP3 (prior 0.0441)",
+      "level": "moderate",
+      "predictor": "REVEL",
+      "eval_set": "ClinVar VUS (unselected)",
+      "n_eval": 1146,
+      "frac_median": 0.4721,
+      "frac_2.5": 0.3656,
+      "frac_97.5": 0.6065,
+      "frac_width": 0.2408,
+      "frac_at_ceiling": 0.0
+    },
+    {
+      "ladder": "ClinGen PP3 (prior 0.0441)",
+      "level": "strong",
+      "predictor": "EVEE",
+      "eval_set": "Tier-1 (selected)",
+      "n_eval": 105,
+      "frac_median": 0.7429,
+      "frac_2.5": 0.5238,
+      "frac_97.5": 0.981,
+      "frac_width": 0.4571,
+      "frac_at_ceiling": 0.01
+    },
+    {
+      "ladder": "ClinGen PP3 (prior 0.0441)",
+      "level": "strong",
+      "predictor": "EVEE",
+      "eval_set": "ClinVar VUS (unselected)",
+      "n_eval": 1146,
+      "frac_median": 0.1178,
+      "frac_2.5": 0.0602,
+      "frac_97.5": 0.2853,
+      "frac_width": 0.2251,
+      "frac_at_ceiling": 0.0
+    },
+    {
+      "ladder": "ClinGen PP3 (prior 0.0441)",
+      "level": "strong",
+      "predictor": "REVEL",
+      "eval_set": "Tier-1 (selected)",
+      "n_eval": 105,
+      "frac_median": 0.819,
+      "frac_2.5": 0.6381,
+      "frac_97.5": 0.9526,
+      "frac_width": 0.3145,
+      "frac_at_ceiling": 0.0
+    },
+    {
+      "ladder": "ClinGen PP3 (prior 0.0441)",
+      "level": "strong",
+      "predictor": "REVEL",
+      "eval_set": "ClinVar VUS (unselected)",
+      "n_eval": 1146,
+      "frac_median": 0.1562,
+      "frac_2.5": 0.0969,
+      "frac_97.5": 0.3187,
+      "frac_width": 0.2219,
+      "frac_at_ceiling": 0.0
+    }
+  ],
+  "sets": {
+    "primary (ClinVar >=2*)": {
+      "pat": 331,
+      "ben": 104
+    },
+    "+ BS1_VCEP (FAF >= 0.025%)": {
+      "pat": 331,
+      "ben": 139
+    },
+    "+ BS1_VCEP (FAF >= 0.025%), conflicting removed": {
+      "pat": 331,
+      "ben": 116
+    },
+    "+ BA1_VCEP (FAF >= 0.05%)": {
+      "pat": 331,
+      "ben": 110
+    },
+    "+ BA1_VCEP (FAF >= 0.05%), conflicting removed": {
+      "pat": 331,
+      "ben": 108
+    },
+    "+ exploratory (joint AF >= 0.01%)": {
+      "pat": 331,
+      "ben": 121
+    },
+    "+ exploratory (joint AF >= 0.01%), conflicting removed": {
+      "pat": 331,
+      "ben": 109
+    }
+  },
+  "caveats": [
+    "Thresholds derived here are more permissive than published calibrations and must not be presented as candidate clinical cutoffs.",
+    "A zero benign count in the tail is not a zero rate - see the binomial interval in R1.",
+    "The benign-tail fraction is not a prospective population FPR.",
+    "Sets labelled 'exploratory' do NOT meet the VCEP BS1 criterion.",
+    "PP3/BP4, never PS3/BS3.",
+    "R1b is independent of predictor, threshold and estimator: it follows from LR+ = TPR/FPR with TPR <= 1.",
+    "R4 enters the main text only if it replicates on unselected VUS (R4b).",
+    "The frequency criterion and the curated benign set are not independent routes to a control in this panel; a larger population resource returns predominantly variants the reference set already holds.",
+    "Zero qualifying-fraction width on the selected cohort is saturation of a score-selected set, not a precise estimate."
+  ]
+}

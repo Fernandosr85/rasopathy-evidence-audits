@@ -1,0 +1,9 @@
+level,lr_target,predictor,old_estimator,corrected_always,corrected_conditional
+supporting,2.08,EVEE,0.044,0.0442,0.0442
+supporting,2.08,REVEL,0.213,0.213,0.213
+moderate,4.33,EVEE,0.142,0.1405,0.1405
+moderate,4.33,REVEL,0.358,0.358,0.358
+strong,18.7,EVEE,0.66,0.6619,0.6282
+strong,18.7,REVEL,0.601,0.601,0.579
+very_strong,350.0,EVEE,,,
+very_strong,350.0,REVEL,,,

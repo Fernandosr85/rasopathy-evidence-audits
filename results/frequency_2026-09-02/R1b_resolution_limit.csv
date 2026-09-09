@@ -1,0 +1,9 @@
+ladder,level,lr_target,max_admissible_fpr,n_needed_two_sided,n_needed_one_sided,n_benign_available,zero_event_upper_bound,resolvable_at_current_n
+Tavtigian (prior 0.10),supporting,2.08,0.4807692307692307,6,5,104,0.034848306587674044,True
+Tavtigian (prior 0.10),moderate,4.33,0.23094688221709006,15,12,104,0.034848306587674044,True
+Tavtigian (prior 0.10),strong,18.7,0.053475935828877004,68,55,104,0.034848306587674044,True
+Tavtigian (prior 0.10),very_strong,350.0,0.002857142857142857,1290,1048,104,0.034848306587674044,False
+ClinGen PP3 (prior 0.0441),supporting,2.406,0.4156275976724854,7,6,104,0.034848306587674044,True
+ClinGen PP3 (prior 0.0441),moderate,5.79,0.17271157167530224,20,16,104,0.034848306587674044,True
+ClinGen PP3 (prior 0.0441),strong,33.53,0.029824038174768863,122,99,104,0.034848306587674044,False
+ClinGen PP3 (prior 0.0441),very_strong,1124.0,0.0008896797153024911,4145,3366,104,0.034848306587674044,False

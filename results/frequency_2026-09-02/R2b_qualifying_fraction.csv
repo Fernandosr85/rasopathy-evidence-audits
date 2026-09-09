@@ -1,0 +1,18 @@
+predictor,source,label,threshold,frac_vus_qualifying,n_vus
+EVEE,derived (ClinGen PP3 (prior 0.0441)),strong,0.9068,0.060209424083769635,1146
+EVEE,published,EVEE site cutoff,0.8,0.1212914485165794,1146
+EVEE,derived (Tavtigian (prior 0.10)),strong,0.6619,0.1849912739965096,1146
+EVEE,derived (ClinGen PP3 (prior 0.0441)),moderate,0.1914,0.5130890052356021,1146
+EVEE,derived (Tavtigian (prior 0.10)),moderate,0.1405,0.5732984293193717,1146
+EVEE,derived (ClinGen PP3 (prior 0.0441)),supporting,0.0568,0.7408376963350786,1146
+EVEE,derived (Tavtigian (prior 0.10)),supporting,0.0442,0.7766143106457243,1146
+REVEL,published,Pejaver strong,0.932,0.03315881326352531,1146
+REVEL,published,Pejaver moderate,0.773,0.13961605584642234,1146
+REVEL,derived (ClinGen PP3 (prior 0.0441)),strong,0.745,0.156195462478185,1146
+REVEL,published,RASopathy VCEP PP3,0.7,0.19458987783595114,1146
+REVEL,published,Pejaver supporting,0.644,0.2425828970331588,1146
+REVEL,derived (Tavtigian (prior 0.10)),strong,0.601,0.27835951134380454,1146
+REVEL,derived (ClinGen PP3 (prior 0.0441)),moderate,0.432,0.4720767888307155,1146
+REVEL,derived (Tavtigian (prior 0.10)),moderate,0.358,0.5916230366492147,1146
+REVEL,derived (ClinGen PP3 (prior 0.0441)),supporting,0.247,0.7862129144851658,1146
+REVEL,derived (Tavtigian (prior 0.10)),supporting,0.213,0.8315881326352531,1146

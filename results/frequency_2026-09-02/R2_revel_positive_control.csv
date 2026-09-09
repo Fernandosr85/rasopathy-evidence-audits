@@ -1,0 +1,7 @@
+ladder,level,lr_target,our_threshold,pejaver_published,difference
+Tavtigian (prior 0.10),supporting,2.08,0.213,0.644,-0.43100000000000005
+Tavtigian (prior 0.10),moderate,4.33,0.358,0.773,-0.41500000000000004
+Tavtigian (prior 0.10),strong,18.7,0.601,0.932,-0.33100000000000007
+ClinGen PP3 (prior 0.0441),supporting,2.406,0.247,0.644,-0.397
+ClinGen PP3 (prior 0.0441),moderate,5.79,0.432,0.773,-0.341
+ClinGen PP3 (prior 0.0441),strong,33.53,0.745,0.932,-0.18700000000000006
