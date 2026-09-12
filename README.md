@@ -206,6 +206,14 @@ isoform divergence are not specific to RAS-MAPK — but that has not been tested
 
 ## Related
 
+[Functional-evidence statements in ClinVar](https://github.com/Fernandosr85/clinvar-functional-evidence-asymmetry)
+— same gene panel, a prior question. Both audits here take a statement about functional evidence as
+given and ask whether it holds up. That one asks whether such a statement gets recorded at all: across
+32,569 submissions, 19 of the 26 laboratories that ever claim functional evidence never once record an
+absence, because PS3 is a machine-readable way to say an assay exists and nothing records having
+searched and found nothing. It also reports what the count could not settle — a blind re-read put
+inter-reader agreement on the categories at 40.4%, κ = 0.104.
+
 [RASopathy Functional Evidence Atlas](https://github.com/Fernandosr85/rasopathy-functional-evidence-atlas)
 — the curation audit these two grew out of, including the 40-variant worksheet.
 
