@@ -212,7 +212,7 @@ given and ask whether it holds up. That one asks whether such a statement gets r
 32,569 submissions, 19 of the 26 laboratories that ever claim functional evidence never once record an
 absence, because PS3 is a machine-readable way to say an assay exists and nothing records having
 searched and found nothing. It also reports what the count could not settle — a blind re-read put
-inter-reader agreement on the categories at 40.4%, κ = 0.104.
+inter-reader agreement on the categories at 40.4%, κ = 0.104. A second round on a later release adds sentence-level citation attribution and a robustness check of that pipeline against its own defects: [How functional evidence is recorded in ClinVar](https://github.com/Fernandosr85/clinvar-functional-evidence-asymmetry/blob/main/reports/2026-09-29-one-paper-two-readings.md).
 
 [RASopathy Functional Evidence Atlas](https://github.com/Fernandosr85/rasopathy-functional-evidence-atlas)
 — the curation audit these two grew out of, including the 40-variant worksheet.
